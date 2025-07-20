@@ -1,0 +1,135 @@
+{
+  // File associations
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.vue": "vue",
+    "*.ts": "typescript",
+    "*.js": "javascript",
+    "*.md": "markdown"
+  },
+
+  // Editor settings
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+
+  // Vue-specific settings
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar",
+    "editor.suggest.insertMode": "replace"
+  },
+
+  // TypeScript settings
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // JSON settings
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Tailwind CSS settings
+  "tailwindCSS.classAttributes": ["class", "ui"],
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["class:\\s*\"([^\"]*)", "([^\"]*)"]
+  ],
+  "tailwindCSS.includeLanguages": {
+    "vue": "html",
+    "vue-html": "html"
+  },
+
+  // ESLint settings
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue"],
+  "eslint.format.enable": true,
+
+  // TypeScript settings
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+
+  // Vue/Volar settings
+  "vue.inlayHints.missingProps": true,
+  "vue.inlayHints.inlineHandlerLeading": true,
+  "vue.inlayHints.optionsWrapper": true,
+  "vue.server.hybridMode": true,
+
+  // Nuxt-specific settings
+  "nuxt.isNuxtApp": true,
+
+  // Auto-import settings
+  "typescript.preferences.includeCompletionsWithSnippetText": true,
+  "javascript.preferences.includeCompletionsWithSnippetText": true,
+
+  // File explorer settings
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.vue": "${capture}.vue.d.ts",
+    "nuxt.config.*": ".nuxtrc,.nuxtignore,.gitignore,README*,LICENSE*,CHANGELOG*",
+    "package.json": "pnpm-lock.yaml,yarn.lock,package-lock.json,.npmrc,.yarnrc*,lerna.json,nx.json"
+  },
+
+  // Emmet settings
+  "emmet.includeLanguages": {
+    "vue": "html",
+    "vue-html": "html"
+  },
+
+  // Search settings
+  "search.exclude": {
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/.git": true,
+    "**/coverage": true
+  },
+
+  // File watcher settings
+  "files.watcherExclude": {
+    "**/.nuxt/**": true,
+    "**/.output/**": true,
+    "**/dist/**": true,
+    "**/node_modules/**": true
+  },
+
+  // Terminal settings
+  "terminal.integrated.env.osx": {
+    "NODE_OPTIONS": "--max-old-space-size=4096"
+  },
+
+  // Error lens settings (if installed)
+  "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+
+  // Auto-save settings
+  "files.autoSave": "onFocusChange",
+
+  // Bracket pair colorization
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+
+  // Minimap settings
+  "editor.minimap.enabled": false,
+
+  // Word wrap
+  "editor.wordWrap": "on"
+}

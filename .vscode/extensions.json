@@ -1,0 +1,65 @@
+{
+  "recommendations": [
+    // Vue & Nuxt Core Extensions
+    "Vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
+    "Nuxtr.nuxtr-vscode",
+
+    // TypeScript & JavaScript
+    "ms-vscode.vscode-typescript-next",
+
+    // Formatting & Code Quality
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+
+    // Git & Version Control
+    "GitHub.vscode-pull-request-github",
+    "eamodio.gitlens",
+
+    // UI & Productivity
+    "usernamehw.errorlens",
+    "PKief.material-icon-theme",
+    "GitHub.github-vscode-theme",
+    "ms-vscode.vscode-json",
+
+    // Development Tools
+    "ms-vscode.vscode-js-debug",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "bradlc.vscode-tailwindcss",
+
+    // Markdown & Documentation
+    "yzhang.markdown-all-in-one",
+    "DavidAnson.vscode-markdownlint",
+
+    // Testing
+    "ms-playwright.playwright",
+    "ZixuanChen.vitest-explorer",
+
+    // Utilities
+    "ms-vscode.vscode-json",
+    "redhat.vscode-yaml",
+    "ms-vscode.vscode-json5",
+
+    // Advanced Development
+    "antfu.iconify",
+    "antfu.unocss",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-json"
+  ],
+  "unwantedRecommendations": [
+    // Vue 2 extensions that conflict with Vue 3/Nuxt 4
+    "octref.vetur",
+    "jcbuisson.vue",
+    "liuji-jim.vue",
+
+    // Deprecated or conflicting extensions
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "eg2.tslint",
+
+    // Extensions that might cause issues with Nuxt 4
+    "johnsoncodehk.vscode-tsjs-plugin-vue",
+    "hollowtree.vue-snippets"
+  ]
+}

@@ -1,0 +1,528 @@
+{
+  "basics": {
+    "name": "Jorge Miranda",
+    "label": "Front-End Engineer | Sr Software Engineer | TS JS Node 🌎",
+    "picture": "",
+    "email": "",
+    "website": "https://github.com/jotaesteves",
+    "summary": "Experienced Front-End Engineer with 10+ years in software development, specializing in modern JavaScript frameworks including Vue.js, React.js, and Nuxt.js. Proven track record in e-commerce platforms, SaaS applications, and enterprise-level projects. Expertise in TypeScript, Node.js, and comprehensive testing frameworks. Strong background in UX/UI design and agile development methodologies.",
+    "location": {
+      "address": "",
+      "postalCode": "1120",
+      "city": "",
+      "countryCode": "",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "jorge-miranda-dev",
+        "url": "https://linkedin.com/in/jorge-miranda-dev"
+      },
+      {
+        "network": "GitHub",
+        "username": "jotaesteves",
+        "url": "https://github.com/jotaesteves"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "SIROC",
+      "position": "Software Engineer",
+      "website": "",
+      "startDate": "2025-01-01",
+      "summary": "Modern software development using cutting-edge technologies and best practices",
+      "highlights": [
+        "Developed from scratch a modern DAW (Digital Audio Workstation) application",
+        "Collaborated with UX/UI designers to ensure pixel-perfect implementations",
+        "Implemented React components from Figma designs",
+        "Utilized TypeScript for type safety and maintainability",
+        "Developed scalable front-end architectures",
+        "Collaborated in agile development environment"
+      ],
+      "endDate": "2025-03-01"
+    },
+    {
+      "company": "epitome",
+      "position": "Lead Front-End Engineer",
+      "website": "",
+      "startDate": "2024-06-01",
+      "summary": "Led front-end development team and architected scalable solutions for e-commerce platforms",
+      "highlights": [
+        "Led the e-commerce project",
+        "Architected and implemented scalable React.js components in a Next.Js application",
+        "Mentored developers and established coding standards",
+        "Helped port the existing Next.JS application to a proprietary framework",
+        "Followed best practices in tracking and analytics using Google Tag Manager and Google Analytics"
+      ],
+      "endDate": "2024-12-01"
+    },
+    {
+      "company": "epitome GmbH",
+      "position": "Front-End Engineer",
+      "website": "",
+      "startDate": "2023-09-01",
+      "summary": "E-Commerce greenfield project development with focus on modern tooling and design systems",
+      "highlights": [
+        "Developed greenfield e-commerce platform from scratch",
+        "Implemented Amazon Style Dictionary for design token management",
+        "Built responsive and accessible user interfaces",
+        "Collaborated with UX/UI designers to ensure pixel-perfect implementations"
+      ],
+      "endDate": "2024-06-01"
+    },
+    {
+      "company": "Human Navigator Groep",
+      "position": "Front-End Engineer",
+      "website": "",
+      "startDate": "2023-06-01",
+      "summary": "HR tool: SaaS Project",
+      "highlights": [
+        "Helped refactor and improve existing codebase",
+        "Implemented new features using Vue.js and TypeScript",
+        "Collaborated with cross-functional teams to enhance user experience",
+        "Ensured code quality through code reviews",
+        "Usage of Vue3 over Vue2"
+      ],
+      "endDate": "2023-08-01"
+    },
+    {
+      "company": "Proxify",
+      "position": "Front-End Developer",
+      "website": "",
+      "startDate": "2022-10-01",
+      "summary": "TaaS Project",
+      "highlights": [],
+      "endDate": "2023-06-01"
+    },
+    {
+      "company": "Zentered",
+      "position": "Front-End Developer",
+      "website": "",
+      "startDate": "2021-12-01",
+      "summary": "E-Commerce project Back-Office project",
+      "highlights": [],
+      "endDate": "2022-06-01"
+    },
+    {
+      "company": "Helloprint",
+      "position": "Front-End / QA Developer",
+      "website": "",
+      "startDate": "2021-03-01",
+      "summary": "Full-stack e-commerce development with focus on testing and quality assurance using modern frameworks",
+      "highlights": [
+        "Developed e-commerce solutions using Vue.js, Nuxt.js, and JavaScript",
+        "Implemented comprehensive testing strategies with Playwright and Percy",
+        "Built PHP/Prestashop integrations with Contentful CMS",
+        "Established quality assurance processes and automated testing pipelines",
+        "Worked with modern CSS frameworks including SASS and responsive design"
+      ],
+      "endDate": "2021-12-01"
+    },
+    {
+      "company": "Celfocus",
+      "position": "Front-End Developer",
+      "website": "",
+      "startDate": "2020-10-01",
+      "summary": "Website Project: AEM Adobe Experience Manager, VueJs, JavaScript, HTML, CSS; Scrum-Agile, Git, Gitlab; Front-office application Project: ExtJs Framework, Javascript, HTML, CSS SQL; Waterfall, Git;  IT Consultancy company: Growin",
+      "highlights": [],
+      "endDate": "2021-03-01"
+    },
+    {
+      "company": "Leroy Merlin",
+      "position": "Front-End Engineer",
+      "website": "",
+      "startDate": "2018-12-01",
+      "summary": "Store distribuition platform Project: Vue Js, Webpack, JavaScript, all things related to the front-end of the APP ( with a side of Node ); Scrum-Agile, Git, Jira, Gitlab;  IT Consultancy company: Mantu ( Amaris );",
+      "highlights": [],
+      "endDate": "2020-10-01"
+    },
+    {
+      "company": "FREELANCE MEDIA PRODUCTIONS",
+      "position": "Graphic Designer",
+      "website": "",
+      "startDate": "2015-01-01",
+      "summary": "",
+      "highlights": [],
+      "endDate": "2018-01-01"
+    },
+    {
+      "company": "Jorge Esteves",
+      "position": "Front-End Developer / Designer",
+      "website": "",
+      "startDate": "2011-01-01",
+      "summary": "",
+      "highlights": [],
+      "endDate": "2022-01-01"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidade de Coimbra",
+      "area": "Design and Multimedia",
+      "studyType": "Bachelor's Degree",
+      "startDate": "2013-01-01",
+      "gpa": "",
+      "courses": [
+        "Web Design",
+        "Interactive Media",
+        "User Interface Design",
+        "Digital Communication",
+        "Typography",
+        "Multimedia Production"
+      ],
+      "endDate": "2017-01-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Amazon Web Services (AWS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Google Search Console",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "salesforce",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Next.js",
+      "level": "Intermediate",
+      "keywords": ["React Framework", "Server-side Rendering", "Static Generation"]
+    },
+    {
+      "name": "React.js",
+      "level": "Advanced",
+      "keywords": ["Hooks", "Component Lifecycle", "State Management", "JSX"]
+    },
+    {
+      "name": "vitest",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Sonarcube",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Gitlab",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon Style Dictionary",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Google Analytics",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Google Tag Manager",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Yarn",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "BigCommerce",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "StencilJS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Figma",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "YAML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software as a Service (SaaS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "vite",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Webpack",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "GraphQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "GitHub",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PlaywrightJs",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Mixpanel",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Analytics",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Nuxt.js",
+      "level": "Advanced",
+      "keywords": ["SSR", "SSG", "Vue.js Framework", "Universal Applications"]
+    },
+    {
+      "name": "Jest",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cypress",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TypeScript",
+      "level": "Advanced",
+      "keywords": ["Type Safety", "Interface Design", "Generic Programming", "Modern JavaScript"]
+    },
+    {
+      "name": "Node.js",
+      "level": "Advanced",
+      "keywords": ["Backend Development", "API Development", "NPM", "Express.js"]
+    },
+    {
+      "name": "HTML5",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cascading Style Sheets (CSS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "windi css",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Front-end Development",
+      "level": "Expert",
+      "keywords": ["Responsive Design", "User Experience", "Performance Optimization", "Accessibility"]
+    },
+    {
+      "name": "Vue.js",
+      "level": "Expert",
+      "keywords": ["Frontend Framework", "Single Page Applications", "Component-based Architecture", "State Management"]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Expert",
+      "keywords": ["ES6+", "Async Programming", "DOM Manipulation", "Functional Programming"]
+    },
+    {
+      "name": "UX / UI Design",
+      "level": "Advanced",
+      "keywords": ["User Research", "Prototyping", "Design Systems", "Figma"]
+    },
+    {
+      "name": "User Experience (UX)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Interface Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Graphic Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Branding",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Art Direction",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Typography",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Music Composition",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "agile",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Affinity Designer",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML5 + CSS3",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SASS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "LESS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "jQuery",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "node.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JSON",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "REST API",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe Photoshop",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe Illustrator",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe InDesign",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe AfterEffects",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Affinity Photo",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "affinity publisher",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe Experience Manager (AEM)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Teamwork",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "English",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "French",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency"
+    },
+    {
+      "language": "Portuguese",
+      "fluency": "Native or bilingual proficiency"
+    },
+    {
+      "language": "French",
+      "fluency": null
+    },
+    {
+      "language": "Spanish",
+      "fluency": null
+    }
+  ]
+}
