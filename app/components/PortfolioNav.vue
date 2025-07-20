@@ -21,10 +21,16 @@
           </div>
         </div>
 
-        <!-- Theme Toggle -->
+        <!-- Theme Toggle and Mobile Menu -->
         <div class="flex items-center space-x-4">
+          <!-- Color Mode Toggle -->
+          <!--  <UButton variant="ghost" size="sm" square
+            :icon="colorMode.value === 'dark' ? 'i-heroicons-sun' : 'i-heroicons-moon'"
+            class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+            @click="toggleColorMode" /> -->
+
           <!-- Mobile menu button -->
-          <div class="md:hidden">
+          <div class="md:hidden dark:text-white">
             <UButton variant="ghost" size="sm" square @click="mobileMenuOpen = !mobileMenuOpen">
               <UIcon :name="mobileMenuOpen ? 'i-heroicons-x-mark' : 'i-heroicons-bars-3'" class="w-5 h-5" />
             </UButton>
@@ -48,6 +54,7 @@
 
 <script setup lang="ts">
 const mobileMenuOpen = ref(false)
+const colorMode = useColorMode()
 const { getPersonalInfo } = usePortfolio()
 const personalInfo = getPersonalInfo()
 
@@ -58,6 +65,10 @@ const navItems = [
   /* { name: 'Projects', href: '#projects' }, */
   { name: 'Contact', href: '#contact' }
 ]
+
+const toggleColorMode = () => {
+  colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+}
 
 const scrollToSection = (href: string) => {
   const element = document.querySelector(href)
