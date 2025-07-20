@@ -3,11 +3,7 @@
   Reusable card component with consistent styling
 -->
 <template>
-  <div :class="[
-    'bg-white dark:bg-gray-900 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700',
-    paddingClass,
-    hoverClass
-  ]">
+  <div :class="cardClasses">
     <!-- Card Header -->
     <div v-if="$slots.header" class="mb-6">
       <slot name="header" />
@@ -24,28 +20,17 @@
 </template>
 
 <script setup lang="ts">
+import { cardVariant } from '~/utils/styles';
+
 interface Props {
   padding?: 'sm' | 'md' | 'lg'
-  hover?: boolean
+  variant?: 'default' | 'hover' | 'bordered'
 }
 
 const props = withDefaults(defineProps<Props>(), {
   padding: 'md',
-  hover: false
+  variant: 'default'
 })
 
-const paddingClass = computed(() => {
-  switch (props.padding) {
-    case 'sm':
-      return 'p-4'
-    case 'lg':
-      return 'p-8'
-    default:
-      return 'p-6'
-  }
-})
-
-const hoverClass = computed(() =>
-  props.hover ? 'transition-transform hover:scale-105' : ''
-)
+const cardClasses = computed(() => cardVariant(props.variant, props.padding))
 </script>

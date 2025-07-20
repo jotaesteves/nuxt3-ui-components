@@ -17,7 +17,7 @@
           <BaseCard :class="[
             'w-full max-w-lg',
             index % 2 === 0 ? 'mr-auto pr-8' : 'ml-auto pl-8'
-          ]" hover>
+          ]" variant="hover">
             <div class="flex items-start justify-between mb-4">
               <div class="flex-1">
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">
