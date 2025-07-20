@@ -89,41 +89,10 @@ const contactInfo = [
   }
 ]
 
-const socialLinks = [
+/* const socialLinks = [
   { name: 'GitHub', icon: 'i-simple-icons-github', url: personalInfo.social.github },
   { name: 'LinkedIn', icon: 'i-simple-icons-linkedin', url: personalInfo.social.linkedin },
   { name: 'Email', icon: 'i-heroicons-envelope', url: personalInfo.social.email }
-]
+] */
 
-const formState = reactive({
-  name: '',
-  email: '',
-  subject: '',
-  message: ''
-})
-
-const onSubmit = async (data: typeof formState) => {
-  isSubmitting.value = true
-
-  try {
-    // Here you would typically send the data to your backend or email service
-    console.log('Form submitted:', data)
-
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000))
-
-    // Show success message (you might want to use a toast notification)
-    alert('Message sent successfully! I\'ll get back to you soon.')
-
-    // Reset form
-    Object.keys(formState).forEach(key => {
-      formState[key as keyof typeof formState] = ''
-    })
-  } catch (error) {
-    console.error('Error sending message:', error)
-    alert('There was an error sending your message. Please try again.')
-  } finally {
-    isSubmitting.value = false
-  }
-}
 </script>

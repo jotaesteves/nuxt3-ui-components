@@ -6,8 +6,6 @@
 
     <!--  <PortfolioExperience /> -->
 
-    <LinkedInProfile profile-url="https://www.linkedin.com/in/jorge-miranda-dev/" class="mt-8" />
-
     <!-- <PortfolioProjects /> -->
     <PortfolioGitHubStats />
     <PortfolioContact />

@@ -88,23 +88,10 @@
 </template>
 
 <script setup lang="ts">
+import type { ResumeData } from '~/types'
+
 // Import resume data directly
 import resumeJsonData from '~/assets/resume/resume.json'
-
-// Types for resume data structure
-interface ResumeWork {
-  company: string
-  position: string
-  website?: string
-  startDate: string
-  endDate?: string
-  summary?: string
-  highlights?: string[]
-}
-
-interface ResumeData {
-  work: ResumeWork[]
-}
 
 // Transform resume work data to experience format
 const transformResumeToExperience = (resumeData: ResumeData) => {

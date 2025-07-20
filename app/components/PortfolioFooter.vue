@@ -9,7 +9,8 @@
             {{ footerData.tagline }}
           </p>
           <div class="flex space-x-4">
-            <a v-for="social in footerData.socialLinks" :key="social.name" :href="social.url" target="_blank"
+            <a
+v-for="social in footerData.socialLinks" :key="social.name" :href="social.url" target="_blank"
               rel="noopener noreferrer"
               class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-700 transition-colors">
               <UIcon :name="social.icon" class="w-5 h-5" />
@@ -23,7 +24,8 @@
           <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
           <ul class="space-y-2">
             <li v-for="link in footerData.quickLinks" :key="link.name">
-              <a :href="link.href" class="text-gray-300 hover:text-white transition-colors"
+              <a
+:href="link.href" class="text-gray-300 hover:text-white transition-colors"
                 @click="scrollToSection(link.href)">
                 {{ link.name }}
               </a>
@@ -36,7 +38,8 @@
           <h4 class="text-lg font-semibold mb-4">Contact</h4>
           <ul class="space-y-2">
             <li v-for="contact in footerData.contactInfo" :key="contact.type">
-              <a :href="contact.href" :target="contact.external ? '_blank' : undefined"
+              <a
+:href="contact.href" :target="contact.external ? '_blank' : undefined"
                 :rel="contact.external ? 'noopener noreferrer' : undefined"
                 class="text-gray-300 hover:text-white transition-colors flex items-center space-x-2">
                 <UIcon :name="contact.icon" class="w-4 h-4" />
@@ -53,7 +56,8 @@
           © {{ currentYear }} {{ footerData.name }}. All rights reserved.
         </p>
         <div class="flex space-x-6">
-          <a v-for="legal in footerData.legalLinks" :key="legal.name" :href="legal.href"
+          <a
+v-for="legal in footerData.legalLinks" :key="legal.name" :href="legal.href"
             class="text-gray-400 hover:text-white text-sm transition-colors">
             {{ legal.name }}
           </a>

@@ -1,5 +1,6 @@
 <template>
-  <section id="home"
+  <section
+id="home"
     class="pt-16 min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
@@ -28,7 +29,8 @@
 
           <!-- Social Links -->
           <div class="flex space-x-6 mt-8">
-            <a v-for="social in heroData.socialLinks" :key="social.name" :href="social.url" target="_blank"
+            <a
+v-for="social in heroData.socialLinks" :key="social.name" :href="social.url" target="_blank"
               rel="noopener noreferrer"
               class="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
               <UIcon :name="social.icon" class="w-6 h-6" />

@@ -138,45 +138,11 @@
 </template>
 
 <script setup lang="ts">
+import type { GitHubRepo, GitHubStats, GitHubUser } from '~/types'
+
 // Use the GitHub composable
 const { fetchUser, fetchRepos, calculateStats, getFeaturedRepos, getLanguageStats, getLanguageColor } = useGitHub()
 const config = useRuntimeConfig()
-
-// Define types from the composable
-interface GitHubUser {
-  login: string
-  name: string
-  bio: string
-  public_repos: number
-  followers: number
-  following: number
-  avatar_url: string
-  html_url: string
-  location: string
-  company: string
-  blog: string
-}
-
-interface GitHubRepo {
-  id: number
-  name: string
-  full_name: string
-  description: string
-  html_url: string
-  stargazers_count: number
-  forks_count: number
-  language: string
-  topics: string[]
-  updated_at: string
-  homepage?: string
-}
-
-interface GitHubStats {
-  totalStars: number
-  totalForks: number
-  totalRepos: number
-  languages: { [key: string]: number }
-}
 
 // State management
 const loading = ref(true)

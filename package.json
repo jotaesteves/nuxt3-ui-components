@@ -29,6 +29,7 @@
   "packageManager": "pnpm@9.10.0+sha1.216899f511c8dfde183c7cb50b69009c779534a8",
   "devDependencies": {
     "@iconify-json/heroicons": "^1.2.2",
-    "@iconify-json/simple-icons": "^1.2.44"
+    "@iconify-json/simple-icons": "^1.2.44",
+    "vue-tsc": "3.0.3"
   }
 }

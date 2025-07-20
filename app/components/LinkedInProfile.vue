@@ -1,7 +1,7 @@
 <template>
-  <div id="experience" class="linkedin-profile mx-8 mb-8">
+  <div id="experience" class="linkedin-profile">
     <!-- LinkedIn Profile Card -->
-    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
+    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 ">
       <div class="flex items-center space-x-4 mb-6">
         <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
           <UIcon name="i-simple-icons-linkedin" class="w-8 h-8 text-white" />
@@ -92,46 +92,10 @@
 </template>
 
 <script setup lang="ts">
+import type { ResumeData } from '~/types'
+
 // Import resume data directly
 import resumeJsonData from '~/assets/resume/resume.json'
-
-// Types for resume data structure
-interface ResumeProfile {
-  network: string
-  username: string
-  url: string
-}
-
-interface ResumeBasics {
-  name: string
-  label: string
-  summary: string
-  location: {
-    city?: string
-    region?: string
-    countryCode?: string
-  }
-  profiles: ResumeProfile[]
-}
-
-interface ResumeWork {
-  company: string
-  position: string
-  startDate: string
-  endDate?: string
-}
-
-interface ResumeSkill {
-  name: string
-  level: string
-  keywords: string[]
-}
-
-interface ResumeData {
-  basics: ResumeBasics
-  work: ResumeWork[]
-  skills: ResumeSkill[]
-}
 
 // Use imported resume data
 const resumeData = ref<ResumeData>(resumeJsonData as ResumeData)

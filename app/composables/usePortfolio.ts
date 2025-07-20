@@ -1,9 +1,19 @@
 import resume from "~/assets/resume/resume.json";
+import type {
+  ContactFormData,
+  ContactFormSchema,
+  ContactFormValidation,
+  GitHubConfig,
+  LinkedInConfig,
+  PersonalInfo,
+  Project,
+  SkillCategory,
+} from "~/types";
 
 // Composable for managing portfolio data
 export const usePortfolio = () => {
   // Personal information that can be easily updated
-  const personalInfo = {
+  const personalInfo: PersonalInfo = {
     name: "Jorge Esteves",
     title: "Front-End Engineer & UI/UX Designer",
     email: "jorge@litlynx.com",
@@ -21,7 +31,7 @@ export const usePortfolio = () => {
   };
 
   // Skills and technologies
-  const skills = {
+  const skills: SkillCategory = {
     frontend: [
       "Vue.js",
       "React",
@@ -40,12 +50,12 @@ export const usePortfolio = () => {
   };
 
   // Experience data loaded from resume.json
-  const experience = resume.experience || [];
+  const experience = resume.work || [];
   if (experience.length === 0) {
     console.warn("No experience data found in resume.json");
   }
   // Featured projects (could be enhanced with GitHub API data)
-  const featuredProjects = [
+  const featuredProjects: Project[] = [
     {
       id: 1,
       name: "E-commerce Platform",
@@ -71,7 +81,7 @@ export const usePortfolio = () => {
   ];
 
   // Contact form validation schema
-  const contactFormSchema = {
+  const contactFormSchema: ContactFormSchema = {
     name: {
       required: true,
       minLength: 2,
@@ -95,7 +105,7 @@ export const usePortfolio = () => {
   };
 
   // GitHub integration settings
-  const githubConfig = {
+  const githubConfig: GitHubConfig = {
     username: "jotaesteves",
     featuredRepoCount: 6,
     excludeForked: true,
@@ -103,7 +113,7 @@ export const usePortfolio = () => {
   };
 
   // LinkedIn integration settings
-  const linkedinConfig = {
+  const linkedinConfig: LinkedInConfig = {
     profileUrl: "https://linkedin.com/in/jorge-miranda-dev",
     // Note: LinkedIn API requires OAuth and has limited public access
     // For now, we'll use static data but this can be enhanced with proper API integration
@@ -136,11 +146,11 @@ export const usePortfolio = () => {
   };
 
   // Validate contact form
-  const validateContactForm = (formData: any) => {
+  const validateContactForm = (formData: ContactFormData): ContactFormValidation => {
     const errors: { [key: string]: string } = {};
 
     Object.entries(contactFormSchema).forEach(([field, rules]) => {
-      const value = formData[field];
+      const value = formData[field as keyof ContactFormData];
 
       if (rules.required && (!value || value.trim() === "")) {
         errors[field] = `${field.charAt(0).toUpperCase() + field.slice(1)} is required`;
@@ -148,12 +158,12 @@ export const usePortfolio = () => {
       }
 
       if (rules.minLength && value && value.length < rules.minLength) {
-        errors[field] = rules.message;
+        errors[field] = rules.message || `${field} must be at least ${rules.minLength} characters`;
         return;
       }
 
       if (rules.pattern && value && !rules.pattern.test(value)) {
-        errors[field] = rules.message;
+        errors[field] = rules.message || `${field} format is invalid`;
         return;
       }
     });

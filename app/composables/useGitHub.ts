@@ -1,41 +1,7 @@
+import type { GitHubRepo, GitHubStats, GitHubUser, LanguageStats } from "~/types";
+
 // Composable for GitHub API integration
 export const useGitHub = () => {
-  // Types for GitHub API responses
-  interface GitHubRepo {
-    id: number;
-    name: string;
-    full_name: string;
-    description: string;
-    html_url: string;
-    stargazers_count: number;
-    forks_count: number;
-    language: string;
-    topics: string[];
-    updated_at: string;
-    homepage?: string;
-  }
-
-  interface GitHubUser {
-    login: string;
-    name: string;
-    bio: string;
-    public_repos: number;
-    followers: number;
-    following: number;
-    avatar_url: string;
-    html_url: string;
-    location: string;
-    company: string;
-    blog: string;
-  }
-
-  interface GitHubStats {
-    totalStars: number;
-    totalForks: number;
-    totalRepos: number;
-    languages: { [key: string]: number };
-  }
-
   // Fetch user profile
   const fetchUser = async (username: string): Promise<GitHubUser | null> => {
     try {
@@ -101,7 +67,7 @@ export const useGitHub = () => {
   };
 
   // Get language statistics with percentages
-  const getLanguageStats = (repos: GitHubRepo[]) => {
+  const getLanguageStats = (repos: GitHubRepo[]): LanguageStats[] => {
     const languages: { [key: string]: number } = {};
 
     repos.forEach((repo) => {

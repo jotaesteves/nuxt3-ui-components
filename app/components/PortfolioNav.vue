@@ -66,9 +66,9 @@ const navItems = [
   { name: 'Contact', href: '#contact' }
 ]
 
-const toggleColorMode = () => {
+/* const toggleColorMode = () => {
   colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
-}
+} */
 
 const scrollToSection = (href: string) => {
   const element = document.querySelector(href)

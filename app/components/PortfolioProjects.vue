@@ -13,7 +13,8 @@
       <!-- Project Filter -->
       <div class="flex justify-center mb-12">
         <div class="flex space-x-2 bg-gray-100 dark:bg-gray-800 rounded-lg p-1">
-          <button v-for="filter in projectFilters" :key="filter"
+          <button
+v-for="filter in projectFilters" :key="filter"
             class="px-4 py-2 rounded-md text-sm font-medium transition-colors" :class="activeFilter === filter
               ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm'
               : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'"
@@ -25,11 +26,13 @@
 
       <!-- Projects Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div v-for="project in filteredProjects" :key="project.id"
+        <div
+v-for="project in filteredProjects" :key="project.id"
           class="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 dark:border-gray-700">
           <!-- Project Image -->
           <div class="relative overflow-hidden">
-            <img :src="project.image" :alt="project.name"
+            <img
+:src="project.image" :alt="project.name"
               class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
             <div class="absolute top-4 right-4">
               <span class="px-2 py-1 bg-blue-600 text-white text-xs font-medium rounded-full">
@@ -45,11 +48,13 @@
                 {{ project.name }}
               </h3>
               <div class="flex space-x-2">
-                <a v-if="project.githubUrl" :href="project.githubUrl" target="_blank" rel="noopener noreferrer"
+                <a
+v-if="project.githubUrl" :href="project.githubUrl" target="_blank" rel="noopener noreferrer"
                   class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors">
                   <UIcon name="i-simple-icons-github" class="w-5 h-5" />
                 </a>
-                <a v-if="project.liveUrl" :href="project.liveUrl" target="_blank" rel="noopener noreferrer"
+                <a
+v-if="project.liveUrl" :href="project.liveUrl" target="_blank" rel="noopener noreferrer"
                   class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors">
                   <UIcon name="i-heroicons-arrow-top-right-on-square" class="w-5 h-5" />
                 </a>
@@ -78,7 +83,8 @@
 
             <!-- Technologies -->
             <div class="flex flex-wrap gap-2">
-              <span v-for="tech in project.technologies" :key="tech"
+              <span
+v-for="tech in project.technologies" :key="tech"
                 class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-xs font-medium">
                 {{ tech }}
               </span>
@@ -98,7 +104,8 @@
             <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
               Check out my GitHub profile for more projects and contributions
             </p>
-            <UButton as="a" href="https://github.com/jotaesteves" target="_blank" rel="noopener noreferrer"
+            <UButton
+as="a" href="https://github.com/jotaesteves" target="_blank" rel="noopener noreferrer"
               variant="outline" size="sm">
               View GitHub Profile
             </UButton>
@@ -111,11 +118,10 @@
 
 <script setup lang="ts">
 const activeFilter = ref('All')
-const { getAllProjects, getProjectsByCategory } = usePortfolio()
+const { getProjectsByCategory } = usePortfolio()
 
 const projectFilters = ['All', 'Web App', 'Mobile', 'Open Source', 'UI/UX']
 
-const projectsData = getAllProjects()
 
 const filteredProjects = computed(() => {
   return getProjectsByCategory(activeFilter.value)

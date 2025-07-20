@@ -34,6 +34,8 @@
               </div>
             </div>
           </div>
+
+          <LinkedInProfile profile-url="https://www.linkedin.com/in/jorge-miranda-dev/" class="mt-8" />
         </div>
 
         <!-- Skills Section -->
@@ -63,39 +65,10 @@
 </template>
 
 <script setup lang="ts">
+import type { ResumeData, ResumeSkill, ResumeWork } from '~/types'
+
 // Import resume data directly
 import resumeJsonData from '~/assets/resume/resume.json'
-
-// Types for resume data structure
-interface ResumeBasics {
-  name: string
-  label: string
-  summary: string
-  location: {
-    city?: string
-    region?: string
-    countryCode?: string
-  }
-}
-
-interface ResumeSkill {
-  name: string
-  level: string
-  keywords: string[]
-}
-
-interface ResumeWork {
-  company: string
-  position: string
-  startDate: string
-  endDate?: string
-}
-
-interface ResumeData {
-  basics: ResumeBasics
-  skills: ResumeSkill[]
-  work: ResumeWork[]
-}
 
 // Calculate experience years from work history
 const calculateExperienceYears = (work: ResumeWork[]) => {
