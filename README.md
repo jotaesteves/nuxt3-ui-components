@@ -1,12 +1,8 @@
 # Nuxt 3 UI Components Portfolio
 
-[![Nuxt](https://img.shields.io/badge/Nuxt-4.0.0-00DC82?style=flat&logo=nuxt.js&logoColor=white)](https://nuxt.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.6.3-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.11-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Vue.js](https://img.shields.io/badge/Vue.js-3.5.17-4FC08D?style=flat&logo=vue.js&logoColor=white)](https://vuejs.org/)
-[![GitHub API](https://img.shields.io/badge/GitHub_API-REST-181717?style=flat&logo=github&logoColor=white)](https://docs.github.com/en/rest)
-[![pnpm](https://img.shields.io/badge/pnpm-9.10.0-F69220?style=flat&logo=pnpm&logoColor=white)](https://pnpm.io/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Nuxt](https://img.shields.io/badge/Nuxt-4.0.0-00DC82?style=flat&logo=nuxt.js&logoColor=white)](https://nuxt.com/) [![TypeScript](https://img.shields.io/badge/TypeScript-5.6.3-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.11-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/) [![Vue.js](https://img.shields.io/badge/Vue.js-3.5.17-4FC08D?style=flat&logo=vue.js&logoColor=white)](https://vuejs.org/) [![GitHub API](https://img.shields.io/badge/GitHub_API-REST-181717?style=flat&logo=github&logoColor=white)](https://docs.github.com/en/rest) [![pnpm](https://img.shields.io/badge/pnpm-9.10.0-F69220?style=flat&logo=pnpm&logoColor=white)](https://pnpm.io/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+![Portfolio Screenshot](screenshot.png)
 
 A modern, responsive portfolio website built with Nuxt 3, featuring reusable UI components and integration with GitHub API for dynamic content.
 
